@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="" href="style.css">
+<title>Dhruv Portfolio</title>
+<style>
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  #home {
+    text-align: center;
+    padding: 30px;
+    background-color:lemonchiffon;
+  }
+  #home img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 20px 10px rgba(163, 209, 211, 0.5);
+    transition: transform 0.3s ease;
+  }
+
+  #home img:hover {
+   transform:scale(1.2);
+   cursor: pointer;
+  }
+
+  #about{
+    text-align: center;
+    background-color :aliceblue;
+  }
+
+  #skills {
+    cursor: pointer;
+    background-color:antiquewhite;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skill-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .skill-card h3 {
+    margin: 10px 0;
+    color: #3498db;
+  }
+  .skill-card p {
+    color: #2c3e50;
+    font-size: 0.9em;
+  }
+
+  .education {
+   background :#fff;
+}
+
+.education ul {
+   list-style: none;
+}
+
+.education li {
+   margin-bottom: 20px;
+   padding: 20px;
+   background: var(--bg-color);
+   border-radius: 10px;
+   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+#contact {
+    background-color:azure;
+    padding: 50px 20px;
+  }
+  #contact .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #contact h2 {
+    margin-bottom: 20px;
+  }
+  #contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact form input,
+  #contact form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  #contact form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #contact form button:hover {
+    background-color: #2980b9;
+  }
+
+
+@keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+}
+
+.fade-in {
+   animation: fadeIn 1s ease-in;
+}
+
+
+h2 {
+   text-align: center;
+   margin-bottom: 40px;
+   color: var(--secondary-color);
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: var(--secondary-color);
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About Me</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact Me</a>
+</nav>
+
+<!-- Content sections (placeholders) -->
+<section id="home">
+    <img src="dhruv.jpg" alt="Your Image">
+    <h2>Dhruv Vaghasiya</h2>
+  <p>Web Developer</p>
+</section>
+
+<section id="about" class="container fade-in">
+  <h2>About Me</h2>
+  <p>Detail-oriented, analytical, and self-driven programmer with extensive experience.
+    Efficient and knowledgeable coder with skills in HTML, CSS, PHP, and JavaScript programming languages.
+    Collaborative and detail-oriented team player with excellent communication skills and ability to work with a team to develop and launch web solutions. Proficient working with Git / GitHub repositories.
+  </p>
+</section>
+
+<section id="skills" class="container fade-in">
+
+    <h2>skills&nbsp;&rarr;</h2>&nbsp;
+    <div class="skill-card">
+      <img src="html.png" alt="HTML">
+      <h3>HTML</h3>
+      <p>90% proficiency</p>
+    </div>
+    <div class="skill-card">
+      <img src="css.png" alt="CSS">
+      <h3>CSS</h3>
+      <p>85% proficiency</p>
+    </div>
+    <div class="skill-card">
+      <img src="js.png" alt="JavaScript">
+      <h3>JavaScript</h3>
+      <p>75% proficiency</p>
+    </div>
+    <div class="skill-card">
+      <img src="php.png" alt="PHP">
+      <h3>PHP</h3>
+      <p>60% proficiency</p>
+    </div>
+    <div class="skill-card">
+      <img src="python.png" alt="Python">
+      <h3>Python</h3>
+      <p>50% proficiency</p>
+    </div>
+</section>
+
+<section id="education" class="education fade-in">
+    <div class="container">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <h3>Bachelor of Computer Appliction</h3>
+                <p>Veer Narmad South Gujarat University, 2022-2025</p>
+            </li>
+            <li>
+                <h3>Higher Secondary Certificate</h3>
+                <p>Devkuvarba Vidhyabhavan , 2022</p>
+            </li>
+            <li>
+             <h3>Secondary School Certificate</h3>
+             <p>Devkuvarba Vidhyabhavan , 2020</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="contact" name="contact" placeholder="Contact Number" maxlength="10" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      let name = event.target.name.value;
+      let email = event.target.email.value;
+      let contact = event.target.contact.value;
+      let message = event.target.message.value;
+      let formMessage = document.getElementById('formMessage');
+  
+      if (name === '' || email === '' || contact === '' || message === '') {
+        formMessage.textContent = 'Please fill out all fields.';
+        formMessage.style.color = 'red';
+      } else if (!validateEmail(email)) {
+        formMessage.textContent = 'Please enter a valid email address.';
+        formMessage.style.color = 'red';
+      } else {
+
+        formMessage.textContent = 'Thank you for your message, ' + name + '. We will get back to you soon!';
+        formMessage.style.color = 'green';
+        
+        event.target.reset();
+      }
+    });
+  
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(String(email).toLowerCase());
+    }
+  </script>
+  
+
+
+</body>
+</html>
